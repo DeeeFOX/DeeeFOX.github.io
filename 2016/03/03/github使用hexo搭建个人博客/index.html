@@ -23,7 +23,7 @@ win按步骤安装即可，linux则解压后配置.bashrc，命令行测试是�
 
 1.2. github准备
 创建新的Repository，Repository name的格式必须如：your_user_name.github.io，其中your_user_name为你的git">
-<meta property="og:updated_time" content="2016-03-03T09:15:36.654Z">
+<meta property="og:updated_time" content="2016-03-03T09:20:44.514Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="程序员的部落格">
 <meta name="twitter:description" content="1. 环境准备1.1. 安装node.js
@@ -88,7 +88,7 @@ win按步骤安装即可，linux则解压后配置.bashrc，命令行测试是�
         <section id="main"><article id="post-github使用hexo搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/03/03/github使用hexo搭建个人博客/" class="article-date">
-  <time datetime="2016-03-03T09:15:36.654Z" itemprop="datePublished">2016-03-03</time>
+  <time datetime="2016-03-03T09:20:44.514Z" itemprop="datePublished">2016-03-03</time>
 </a>
     
   </div>
@@ -135,21 +135,16 @@ win按步骤安装即可，linux则解压后配置.bashrc，命令行测试是�
 </ul>
 <p>该命令执行完后，会在 ~/blog/public/目录下生成一系列html，css等文件。</p>
 <h3 id="2-3-发布到github"><a href="#2-3-发布到github" class="headerlink" title="2.3. 发布到github"></a>2.3. 发布到github</h3><ul>
-<li>部署准备<br>部署到Github前需要配置_config.yml文件，首先找到下面的内容，并修改：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: http://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type:</span><br></pre></td></tr></table></figure>
+<li>部署准备<br>部署到Github前需要配置_config.yml文件，首先找到下面的内容，并修改：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: http://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type:</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">        type: git</span><br><span class="line">        repo: https://github.com/*your_user_name*/*your_user_name*.github.io.git </span><br><span class="line">        branch: master</span><br><span class="line">        message: &quot;blog deploy&quot;</span><br></pre></td></tr></table></figure>
-<p><strong>注意Repository格式：</strong><br>SSH（git@github.com:<em>your_user_name</em>/<em>your_user_name</em>.github.io.git），这时候需要添加ssh key到Settings-&gt;Deploy keys-&gt;Add deploy key处（<a href="http://blog.csdn.net/binyao02123202/article/details/20130891" target="_blank" rel="external">详情参考</a>)<br>HTTPS（<a href="https://github.com/*your_user_name*/*your_user_name*.github.io.git），则每次需要填写github用户名和密码" target="_blank" rel="external">https://github.com/*your_user_name*/*your_user_name*.github.io.git），则每次需要填写github用户名和密码</a></p>
-<ul>
-<li>部署博客（每次部署都需要执行），部署成功后访问<a href="http://deeefox.github.io">博客首页</a><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+<h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">https://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>        type: git<br>        repo: <a href="https://github.com/*your_user_name*/*your_user_name*.github.io.git" target="_blank" rel="external">https://github.com/*your_user_name*/*your_user_name*.github.io.git</a><br>        branch: master<br>        message: “blog deploy”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">**注意Repository格式：**</span><br><span class="line">SSH（git@github.com:*your_user_name*/*your_user_name*.github.io.git），这时候需要添加ssh key到Settings-&gt;Deploy keys-&gt;Add deploy key处（[详情参考](http://blog.csdn.net/binyao02123202/article/details/20130891))  </span><br><span class="line">HTTPS（https://github.com/*your_user_name*/*your_user_name*.github.io.git），则每次需要填写github用户名和密码</span><br><span class="line"></span><br><span class="line">* 部署博客（每次部署都需要执行），部署成功后访问[博客首页](http://deeefox.github.io)</span><br><span class="line">```sh</span><br><span class="line">$ hexo clean</span><br><span class="line">INFO  Deleted database.</span><br><span class="line">INFO  Deleted public folder.</span><br><span class="line">$ hexo generate</span><br><span class="line">...</span><br><span class="line">INFO  30 files generated in 3.8 s</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
 <h3 id="2-4-其他说明"><a href="#2-4-其他说明" class="headerlink" title="2.4. 其他说明"></a>2.4. 其他说明</h3><p>本文参考自<a href="http://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank" rel="external">Hexo搭建Github静态博客</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://deeefox.github.io/2016/03/03/github使用hexo搭建个人博客/" data-id="cilc258vw0001iai58sehrv2y" class="article-share-link">Share</a>
+      <a data-url="http://deeefox.github.io/2016/03/03/github使用hexo搭建个人博客/" data-id="cilc2b3cf0001m1i5jwrttiey" class="article-share-link">Share</a>
       
       
     </footer>
