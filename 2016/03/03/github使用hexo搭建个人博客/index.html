@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>github使用hexo搭建个人博客 | 程序员的部落格</title>
+  <title>程序员的部落格</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="1. 环境准备1.1. 安装node.js
 官网下载最新node.js版本
@@ -13,8 +13,8 @@ win按步骤安装即可，linux则解压后配置.bashrc，命令行测试是�
 1.2. github准备
 创建新的Repository，Repository name的格式必须如：your_user_name.github.io，其中your_user_name为你的git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github使用hexo搭建个人博客">
-<meta property="og:url" content="http://deeefox.github.io/2016/03/01/github使用hexo搭建个人博客/index.html">
+<meta property="og:title" content="程序员的部落格">
+<meta property="og:url" content="http://deeefox.github.io/2016/03/03/github使用hexo搭建个人博客/index.html">
 <meta property="og:site_name" content="程序员的部落格">
 <meta property="og:description" content="1. 环境准备1.1. 安装node.js
 官网下载最新node.js版本
@@ -23,9 +23,9 @@ win按步骤安装即可，linux则解压后配置.bashrc，命令行测试是�
 
 1.2. github准备
 创建新的Repository，Repository name的格式必须如：your_user_name.github.io，其中your_user_name为你的git">
-<meta property="og:updated_time" content="2016-03-01T17:24:49.174Z">
+<meta property="og:updated_time" content="2016-03-03T09:15:36.654Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="github使用hexo搭建个人博客">
+<meta name="twitter:title" content="程序员的部落格">
 <meta name="twitter:description" content="1. 环境准备1.1. 安装node.js
 官网下载最新node.js版本
 win按步骤安装即可，linux则解压后配置.bashrc，命令行测试是否安装成功：12$ node -v$ npm -v
@@ -87,23 +87,13 @@ win按步骤安装即可，linux则解压后配置.bashrc，命令行测试是�
       <div class="outer">
         <section id="main"><article id="post-github使用hexo搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/03/01/github使用hexo搭建个人博客/" class="article-date">
-  <time datetime="2016-03-01T11:45:34.000Z" itemprop="datePublished">2016-03-01</time>
+    <a href="/2016/03/03/github使用hexo搭建个人博客/" class="article-date">
+  <time datetime="2016-03-03T09:15:36.654Z" itemprop="datePublished">2016-03-03</time>
 </a>
     
   </div>
   <div class="article-inner">
     
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      github使用hexo搭建个人博客
-    </h1>
-  
-
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -123,14 +113,43 @@ win按步骤安装即可，linux则解压后配置.bashrc，命令行测试是�
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir ~/blog</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在新创建的文件夹中输入init命令，Hexo随后会自动在目标文件夹建立网站所需要的文件。然后按照提示，运行 npm install：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/blog</span><br><span class="line">$ hexo init</span><br><span class="line">[info] Copying data</span><br><span class="line">[info] You are almost <span class="keyword">done</span>! Dont forget to run `npm install` before you start b logging with Hexo!</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/blog</span><br><span class="line">$ hexo init</span><br><span class="line">INFO Copying data</span><br><span class="line">INFO You are almost <span class="keyword">done</span>! Dont forget to run `npm install` before you start b logging with Hexo!</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="2-2-本地启动"><a href="#2-2-本地启动" class="headerlink" title="2.2. 本地启动"></a>2.2. 本地启动</h3><h3 id="2-3-发布到github"><a href="#2-3-发布到github" class="headerlink" title="2.3. 发布到github"></a>2.3. 发布到github</h3>
+<h3 id="2-2-本地启动"><a href="#2-2-本地启动" class="headerlink" title="2.2. 本地启动"></a>2.2. 本地启动</h3><ul>
+<li><p>安装hexo server</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-server</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动hexo server，完成本地部署</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/blog</span><br><span class="line">$ hexo server</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建新博文</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/blog</span><br><span class="line">$ create new <span class="string">"My First Post"</span></span><br><span class="line">INFO  File created at ~blog/<span class="built_in">source</span>/_posts/My-First-Post.md</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>注意：</strong><br>在hexo new “My First Post” 时，如果没有停止运行hexo server（按Ctrl+C将hexo server停掉），则博文会被创建两次，所以在hexo new文章时，需要stop server。</p>
+<ul>
+<li>编辑博文<br>hexo new “My First Post”会在~blog/source/_posts目录下生成一个markdown文件：My-First-Post.md我们可以使用一个支持markdown语法的编辑器（比如 Sublime Text 3与插件<a href="http://blog.leanote.com/post/54bfa17b8404f03097000000" target="_blank" rel="external">OmniMarkupPreviewer</a>）来编辑该文件。</li>
+<li>生成博文静态页面<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/blog</span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>该命令执行完后，会在 ~/blog/public/目录下生成一系列html，css等文件。</p>
+<h3 id="2-3-发布到github"><a href="#2-3-发布到github" class="headerlink" title="2.3. 发布到github"></a>2.3. 发布到github</h3><ul>
+<li>部署准备<br>部署到Github前需要配置_config.yml文件，首先找到下面的内容，并修改：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: http://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type:</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">        type: git</span><br><span class="line">        repo: https://github.com/*your_user_name*/*your_user_name*.github.io.git </span><br><span class="line">        branch: master</span><br><span class="line">        message: &quot;blog deploy&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>注意Repository格式：</strong><br>SSH（git@github.com:<em>your_user_name</em>/<em>your_user_name</em>.github.io.git），这时候需要添加ssh key到Settings-&gt;Deploy keys-&gt;Add deploy key处（<a href="http://blog.csdn.net/binyao02123202/article/details/20130891" target="_blank" rel="external">详情参考</a>)<br>HTTPS（<a href="https://github.com/*your_user_name*/*your_user_name*.github.io.git），则每次需要填写github用户名和密码" target="_blank" rel="external">https://github.com/*your_user_name*/*your_user_name*.github.io.git），则每次需要填写github用户名和密码</a></p>
+<ul>
+<li>部署博客（每次部署都需要执行），部署成功后访问<a href="http://deeefox.github.io">博客首页</a><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-4-其他说明"><a href="#2-4-其他说明" class="headerlink" title="2.4. 其他说明"></a>2.4. 其他说明</h3><p>本文参考自<a href="http://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank" rel="external">Hexo搭建Github静态博客</a></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://deeefox.github.io/2016/03/01/github使用hexo搭建个人博客/" data-id="cil9ovshz0001uzi5ysuuyamv" class="article-share-link">Share</a>
+      <a data-url="http://deeefox.github.io/2016/03/03/github使用hexo搭建个人博客/" data-id="cilc258vw0001iai58sehrv2y" class="article-share-link">Share</a>
       
       
     </footer>
@@ -179,7 +198,7 @@ win按步骤安装即可，linux则解压后配置.bashrc，命令行测试是�
       <ul>
         
           <li>
-            <a href="/2016/03/01/github使用hexo搭建个人博客/">github使用hexo搭建个人博客</a>
+            <a href="/2016/03/03/github使用hexo搭建个人博客/">(no title)</a>
           </li>
         
           <li>
